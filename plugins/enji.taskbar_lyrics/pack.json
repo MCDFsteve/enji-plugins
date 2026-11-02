@@ -1,0 +1,13 @@
+{
+  "id": "enji.taskbar_lyrics",
+  "name": "任务栏歌词",
+  "version": "1.0.0",
+  "minHostVersion": "0.1.0",
+  "description": "在 Windows 任务栏上、通知区域左边显示正在唱的歌词和它的翻译（没有翻译时显示下一句）。",
+  "author": "Enji",
+  "category": "lyrics",
+  "permissions": ["lyrics", "overlay"],
+  "platforms": ["windows"],
+  "icon": "icon.png",
+  "main": "main.js"
+}

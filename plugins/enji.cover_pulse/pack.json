@@ -1,0 +1,12 @@
+{
+  "id": "enji.cover_pulse",
+  "name": "封面律动",
+  "version": "1.0.0",
+  "minHostVersion": "0.1.0",
+  "description": "播放页的封面跟着音乐的鼓点轻轻放大、回弹，像在呼吸。",
+  "author": "Enji",
+  "category": "appearance",
+  "permissions": ["audio", "cover"],
+  "icon": "icon.png",
+  "main": "main.js"
+}

@@ -1,0 +1,42 @@
+{
+  "version": 1,
+  "plugins": [
+    {
+      "id": "enji.cover_pulse",
+      "name": "封面律动",
+      "version": "1.0.0",
+      "minHostVersion": "0.1.0",
+      "description": "播放页的封面跟着音乐的鼓点轻轻放大、回弹，像在呼吸。",
+      "author": "Enji",
+      "category": "appearance",
+      "permissions": [
+        "audio",
+        "cover"
+      ],
+      "icon": "icon.png",
+      "main": "main.js",
+      "package": "dist/enji.cover_pulse-1.0.0.enj",
+      "path": "plugins/enji.cover_pulse"
+    },
+    {
+      "id": "enji.taskbar_lyrics",
+      "name": "任务栏歌词",
+      "version": "1.0.0",
+      "minHostVersion": "0.1.0",
+      "description": "在 Windows 任务栏上、通知区域左边显示正在唱的歌词和它的翻译（没有翻译时显示下一句）。",
+      "author": "Enji",
+      "category": "lyrics",
+      "permissions": [
+        "lyrics",
+        "overlay"
+      ],
+      "platforms": [
+        "windows"
+      ],
+      "icon": "icon.png",
+      "main": "main.js",
+      "package": "dist/enji.taskbar_lyrics-1.0.0.enj",
+      "path": "plugins/enji.taskbar_lyrics"
+    }
+  ]
+}
