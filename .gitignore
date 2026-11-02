@@ -1,1 +1,3 @@
 .DS_Store
+# The packages the market downloads (a global ignore of dist must not drop them).
+!dist

@@ -11,8 +11,8 @@
 
 | 插件 | 说明 | 系统 |
 | --- | --- | --- |
-| [任务栏歌词](plugins/enji.taskbar_lyrics) | 在任务栏上、通知区域左边显示正在唱的歌词和翻译 | Windows |
-| [封面律动](plugins/enji.cover_pulse) | 播放页的封面跟着鼓点轻轻放大、回弹 | 全部 |
+| [任务栏歌词](plugins/enji.taskbar_lyrics) | 在任务栏上显示歌词 | Windows |
+| [封面律动](plugins/enji.cover_pulse) | 封面随鼓点跳动 | 全部 |
 
 ## 写一个插件
 
