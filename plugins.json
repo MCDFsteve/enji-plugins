@@ -4,8 +4,8 @@
     {
       "id": "enji.cover_pulse",
       "name": "封面律动",
-      "version": "1.0.0",
-      "minHostVersion": "0.1.0",
+      "version": "1.1.0",
+      "minHostVersion": "0.3.0",
       "description": "封面随鼓点跳动。",
       "author": "Enji",
       "category": "appearance",
@@ -15,7 +15,7 @@
       ],
       "icon": "icon.png",
       "main": "main.js",
-      "package": "dist/enji.cover_pulse-1.0.0.enj",
+      "package": "dist/enji.cover_pulse-1.1.0.enj",
       "path": "plugins/enji.cover_pulse"
     },
     {
