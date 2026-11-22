@@ -19,6 +19,70 @@
       "path": "plugins/enji.cover_pulse"
     },
     {
+      "id": "enji.rgb_lyrics",
+      "name": "RGB 桌面歌词",
+      "version": "1.0.0",
+      "minHostVersion": "0.3.20",
+      "description": "让桌面歌词随彩虹流光平滑变色。",
+      "author": "Enji",
+      "category": "lyrics",
+      "permissions": [
+        "overlay"
+      ],
+      "platforms": [
+        "macos",
+        "windows",
+        "linux",
+        "android"
+      ],
+      "icon": "icon.png",
+      "main": "main.js",
+      "settings": [
+        {
+          "id": "mode",
+          "label": "配色方案",
+          "type": "enum",
+          "options": [
+            "彩虹循环",
+            "赛博霓虹",
+            "柔和粉彩",
+            "烈焰极光"
+          ],
+          "default": "彩虹循环"
+        },
+        {
+          "id": "speed",
+          "label": "流动速度",
+          "type": "number",
+          "min": 0.2,
+          "max": 3.0,
+          "default": 1.0
+        },
+        {
+          "id": "saturation",
+          "label": "色彩饱和度",
+          "type": "number",
+          "min": 20,
+          "max": 100,
+          "default": 85
+        },
+        {
+          "id": "secondary_color",
+          "label": "副行同步变色",
+          "type": "boolean",
+          "default": true
+        },
+        {
+          "id": "pause_freeze",
+          "label": "暂停时停止流动",
+          "type": "boolean",
+          "default": false
+        }
+      ],
+      "package": "dist/enji.rgb_lyrics-1.0.0.enj",
+      "path": "plugins/enji.rgb_lyrics"
+    },
+    {
       "id": "enji.taskbar_lyrics",
       "name": "任务栏歌词",
       "version": "1.0.0",

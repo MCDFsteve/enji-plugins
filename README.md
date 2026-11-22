@@ -11,6 +11,7 @@
 
 | 插件 | 说明 | 系统 |
 | --- | --- | --- |
+| [RGB 桌面歌词](plugins/enji.rgb_lyrics) | 让桌面歌词随彩虹流光平滑变色 | macOS / Windows / Linux / Android |
 | [任务栏歌词](plugins/enji.taskbar_lyrics) | 在任务栏上显示歌词 | Windows |
 | [封面律动](plugins/enji.cover_pulse) | 封面随鼓点跳动 | 全部 |
 
@@ -61,15 +62,20 @@ plugins/your.plugin/
 ### 脚本能用的东西
 
 ```js
-// 事件：song、lyric（需要 lyrics）、playback、audio（需要 audio）
+// 事件：song、lyric（需要 lyrics）、playback、audio（需要 audio）、frame（需要 overlay，有浮层或桌面歌词显示时按帧回调）
 enji.on('song', function (song) {});          // { id, name, artists, album, duration }
 enji.on('lyric', function (line) {});         // { text, translation, next, index }
 enji.on('playback', function (state) {});     // { playing, position }
 enji.on('audio', function (sound) {});        // { level, bass, position }，0 到大约 1
+enji.on('frame', function (frame) {});        // { time, dt, playing, desktopLyrics }
 
 enji.platform;   // 'windows'、'macos'、'linux'、'android' 或 'ios'
 enji.song;       // 正在放的歌，或 null
 enji.playing;    // 是否在播放
+
+// 需要 overlay：动态覆盖桌面歌词的实时显示颜色（仅驻留内存，不覆盖用户保存的配色；关闭插件自动恢复）
+desktopLyrics.setColor(0xff3b30, 0x00d9f5);   // 支持 0xrrggbb 整数、'#rrggbb' 或 null（保留用户颜色）
+desktopLyrics.clearColor();
 
 // 需要 overlay：在所有窗口上方显示几行文字。place 是 'free'（用户可拖动的位置）
 // 或 'taskbar'（Windows 任务栏上）；locked 时点击穿透。颜色写 #rrggbb 或 #rrggbbaa。
