@@ -85,7 +85,7 @@
     {
       "id": "enji.taskbar_lyrics",
       "name": "任务栏歌词",
-      "version": "1.0.0",
+      "version": "1.1.0",
       "minHostVersion": "0.1.0",
       "description": "在任务栏上显示歌词。",
       "author": "Enji",
@@ -99,7 +99,7 @@
       ],
       "icon": "icon.png",
       "main": "main.js",
-      "package": "dist/enji.taskbar_lyrics-1.0.0.enj",
+      "package": "dist/enji.taskbar_lyrics-1.1.0.enj",
       "path": "plugins/enji.taskbar_lyrics"
     }
   ]
